@@ -3,7 +3,7 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
     effect: 'slide',
-    speed: 300,
+    speed: 800,
   
     // If we need pagination
     pagination: {
