@@ -51,8 +51,85 @@ body {
 
 /***************** NAV FIM ******************/
 
-/* CARROSSEL */ 
+/* CARROSSEL INÍCIO */ 
 
+.carrossel {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    max-width: 2500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
+.slider-img {
+    box-shadow: 8px 8px 8px black;
+    width: 1920px;
+    height: 1080px;
+}
 
-/* CARROSSEL */ 
+.slider-img:hover {
+    cursor:pointer;
+}
+
+.swiper {
+    height: 95vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-pagination {
+    padding-bottom: 5vh;
+} 
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+}
+
+.swiper-pagination-bullet-active {
+    background: transparent;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: darkblue;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    color: rgb(0, 0, 0);
+    transition: 200ms;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 35px;
+}
+
+.swiper-button-next {
+    margin-right: 30px;
+}
+
+.swiper-button-prev {
+    margin-left: 30px;
+} 
+
+@media screen and (max-width: 1440px) {
+    .slider-img {
+        width: 1300px;
+        height: 731px;
+    }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1900px) {
+    .slider-img {
+        width: 1600px;
+        height: 900px;
+    }
+} 
+/********************** CARROSSEL fim ********************/ 
