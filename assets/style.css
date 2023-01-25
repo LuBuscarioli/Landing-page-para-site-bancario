@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;;
+}
+
+body {
+    font-size: 20px;
+}
+
+/***************** NAV INICIO ******************/
+.navbar {
+    display: flex;
+    height: 90px;
+    background: #f0f2f5;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    height: 90px;
+    margin: 0 2em 0 2em;
+}
+
+.nav__lista {
+    display: flex;
+    padding-left: 1.5em;
+}
+
+.nav__lista li {
+    list-style: none;
+    letter-spacing: 2px;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.nav__lista a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__right-button {
+    margin-right: 2em;
+}
+
+.nav__right-button a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    padding-right: 1em;
+}
+
+/***************** NAV FIM ******************/
+
+/* CARROSSEL */ 
+
+
+
+/* CARROSSEL */ 
