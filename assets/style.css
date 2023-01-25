@@ -61,6 +61,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background: #f0f2f5;
 }
 
 .slider-img {
@@ -85,7 +86,7 @@ body {
 }
 
 .swiper-pagination {
-    padding-bottom: 5vh;
+    margin-bottom: 6vh;
 } 
 
 .swiper-pagination-bullet {
