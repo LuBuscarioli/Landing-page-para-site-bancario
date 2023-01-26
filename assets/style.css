@@ -12,7 +12,7 @@ body {
 /***************** NAV INICIO ******************/
 .navbar {
     display: flex;
-    height: 90px;
+    height: 70px;
     background: #f0f2f5;
     align-items: center;
     justify-content: space-around;
@@ -20,7 +20,7 @@ body {
 }
 
 .nav__logo {
-    height: 90px;
+    height: 70px;
     margin: 0 2em 0 2em;
 }
 
@@ -89,14 +89,19 @@ body {
     align-items: center;
 }
 
-.slider-img {
-    box-shadow: 4px 4px 15px 4px #747474;
-    width: 1900px;
-    height: 1069px;
+.bg-one {
+    background-image: url(img/bank-page1.png);
+    background-size: cover;
 }
 
-.slider-img:hover {
-    cursor:pointer;
+.bg-two {
+    background-image: url(img/bank-page2.png);
+    background-size: cover;
+}
+
+.bg-three {
+    background-image: url(img/bank-page3.png);
+    background-size: cover;
 }
 
 .swiper {
@@ -111,7 +116,7 @@ body {
 }
 
 .swiper-pagination {
-    margin-bottom: 7vh;
+    margin-bottom: 4vh;
 } 
 
 .swiper-pagination-bullet {
@@ -149,6 +154,7 @@ body {
 } 
 
 /********************** CARROSSEL fim ********************/
+
 
 @media screen and (max-width: 1440px) {
     .slider-img {
