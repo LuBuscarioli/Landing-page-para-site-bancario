@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.top-swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -14,5 +14,18 @@ const swiper = new Swiper('.swiper', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+  });
+
+  const midSwiper = new Swiper ('.mid-swiper', {
+    // Optional parameters
+    loop: true,
+    effect: "cards",
+    grabCursor: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.mid-btn-next',
+      prevEl: '.mid-btn-prev',
     },
   });

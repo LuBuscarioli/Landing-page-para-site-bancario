@@ -42,6 +42,12 @@ body {
     text-decoration: none;
     color: #000c63;
     font-weight: 700;
+    transition:200ms;
+}
+
+.nav__lista a:hover {
+    color: rgb(0, 51, 255);
+    transition: 400ms;
 }
 
 .nav__right-button a {
@@ -81,20 +87,12 @@ body {
 
 /* CARROSSEL INÍCIO */ 
 
-/*.carrossel {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}*/
 
 .slide__txt1, .slide__txt2, .slide__txt3 {
     position: absolute;
     font-size: 60px;
     font-weight: 900;
-    left: 15vw;
+    left: 20vw;
     top: 50vh;
     color: white;
 }
@@ -121,15 +119,8 @@ body {
     background-position: top;
 }
 
-/*.swiper-slide {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}*/
-
 .swiper-pagination {
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
 } 
 
 .swiper-pagination-bullet {
@@ -167,3 +158,49 @@ body {
 } 
 
 /********************** CARROSSEL fim ********************/
+
+/* MID CARROSSEL */
+
+.mid-page-swiper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 70vw;
+    align-items: center;
+}
+
+.mid-page-swiper__txt h1 {
+    font-size: 60px;
+}
+
+.mid-page-swiper__txt p {
+    margin-bottom: 1.5em;
+}
+
+.mid-page-swiper__txt a {
+    text-decoration: none;
+    color: darkcyan;
+    padding: 0.8em;
+    background: black;
+    border-radius: 10px;
+}
+
+.mid-swiper {
+    height: 320px;
+    width: 700px;
+    background: transparent;
+}
+
+.swiper-3d .swiper-slide-shadow {
+    background: transparent;
+}
+
+.card-one, .card-two, .card-three {
+    text-align: center;
+}
+
+.mid-swiper .swiper-button-prev, .mid-swiper .swiper-button-next {
+    color: rgb(0, 0, 0);
+}
+
+/* MID CARROSSEL FIM */
