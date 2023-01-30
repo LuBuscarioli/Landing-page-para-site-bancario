@@ -165,7 +165,7 @@ body {
 
 .produtos {
     background: rgb(58,64,74);
-    height: 50vh;
+    height: 500px;
     padding-top: 1.5em;
 }
 
@@ -221,11 +221,12 @@ body {
     padding: 70px 30px 250px;
     background-color: #00073d;
     border-bottom-left-radius: 200px;
-    box-shadow: 0px 8px 10px #00073d;
+    box-shadow: 0px 5px 14px 5px #0000006b;
 }
 
 .cashback__title h1 {
     color: aliceblue;
+    font-weight: 900;
     margin-bottom: 10px;
     font-size: 60px;
 }
@@ -454,7 +455,12 @@ p.discount2 {
 
 /************************ CASHBACK FIM ********************************/
 
-/* MID CARROSSEL */
+/* ************ MID CARROSSEL **************/
+
+.mid-swipper-wrapper {
+    background: rgb(198, 233, 255);
+    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 30%);
+}
 
 .mid-page-swiper {
     display: grid;
@@ -467,6 +473,7 @@ p.discount2 {
 
 .mid-page-swiper__txt h1 {
     font-size: 60px;
+    font-weight: 900;
 }
 
 .mid-page-swiper__txt p {
@@ -512,4 +519,4 @@ p.discount2 {
     color: rgb(0, 0, 0);
 }
 
-/* MID CARROSSEL FIM */
+/****************************************** MID CARROSSEL FIM **************************************************************/
