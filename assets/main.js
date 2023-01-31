@@ -1,5 +1,13 @@
 alert ("VC ESTÁ NA BRANCH TESTES");
 
+let dropBtn = document.querySelectorAll('.dropdown__menu');
+
+dropBtn.forEach((drop) => {
+  drop.addEventListener('click', () => {
+    drop.classList.toggle("active");
+  });
+});
+
 /* CARROSSEL JS */
 const swiper = new Swiper('.top-swiper', {
     // Optional parameters
