@@ -144,11 +144,12 @@ body {
 
 
 .slide__txt1, .slide__txt2, .slide__txt3 {
-    position: absolute;
     font-size: 60px;
     font-weight: 900;
-    left: 10vw;
+    width: 50%;
     top: 50vh;
+    position: relative;
+    text-align: center;
     color: white;
 }
 
@@ -222,7 +223,7 @@ body {
     padding-top: 1.5em;
 }
 
-.produtos__titulo {
+.produtos__title {
     text-align: center;
     font-size: 60px;
     font-weight: 900;
@@ -590,7 +591,54 @@ p.discount2 {
 
 /****************************************** MID CARROSSEL FIM **************************************************************/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
+    .produtos__title, .cashback__title h1, .mid-page-swiper__txt h1 {
+        font-size: 50px;
+    }
+
+    .mid-page-swiper {
+        display: flex;
+        margin: 0 auto;
+        width: 65vw;
+        height: 600px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .bigger-img {
+        display: none;
+    }
+
+    .bg-one {
+        background-image: url(img/bank-mobile-page1.png);
+        background-size: cover;
+        background-position: top;
+    }
+    
+    .bg-two {
+        background-image: url(img/bank-mobile-page2.png);
+        background-size: cover;
+        background-position: top;
+    }
+    
+    .bg-three {
+        background-image: url(img/bank-mobile-page3.png);
+        background-size: cover;
+        background-position: top;
+    }
+
+    .slide__txt1, .slide__txt2, .slide__txt3 {
+        font-size: 50px;
+        font-weight: 900;
+        width: 100%;
+        top: 20vh;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
     .mid-page-swiper {
         display: flex;
         margin: 0 auto;
