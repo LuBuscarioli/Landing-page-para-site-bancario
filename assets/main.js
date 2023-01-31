@@ -1,4 +1,3 @@
-alert ("VC ESTÁ NA BRANCH TESTES");
 
 /* CARROSSEL JS */
 const swiper = new Swiper('.top-swiper', {
