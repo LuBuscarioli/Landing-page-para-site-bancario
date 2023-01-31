@@ -1,1 +1,1 @@
-inicciando readme testes
+iniciando readme testes
