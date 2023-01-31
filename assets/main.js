@@ -1,4 +1,4 @@
-
+/* dropdown menu */
 let dropBtn = document.querySelectorAll('.dropdown__menu');
 
 dropBtn.forEach((drop) => {

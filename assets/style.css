@@ -218,7 +218,7 @@ body {
 
 .produtos {
     background: rgb(58,64,74);
-    height: 500px;
+    /* height: 40vh; */
     padding-top: 1.5em;
 }
 
@@ -237,6 +237,7 @@ body {
 .produtos__cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .produtos__cards p {
@@ -430,15 +431,19 @@ input#price-slider::-webkit-slider-thumb:hover {
 }
 
 .cashback__footer a {
-    color: rgb(0, 0, 0);
-    background-color: rgb(82, 174, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 12, 66);
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 12px;
     padding: 10px 30px;
+    border: 1px solid rgb(0, 12, 66);
+    transition: all 200ms ease-in;
 }
 
 .cashback__footer a:hover {
-    color: #fff;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 12, 66);
 }
   
 .cashback__footer ul {
@@ -455,7 +460,7 @@ input#price-slider::-webkit-slider-thumb:hover {
 }
   
 hr {
-    border-top: 1px solid rgba(7, 0, 84, 0.475);
+    border-top: 1px solid rgb(5, 0, 54);
 }
 
 .cst2 {
@@ -514,16 +519,17 @@ p.discount2 {
 .mid-swipper-wrapper {
     background: rgb(198, 233, 255);
     box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 30%);
-    height: 500px;
+    height: 700px;
 }
 
 .mid-page-swiper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    width: 70vw;
-    height: 500px;
+    width: 65vw;
+    height: 700px;
     align-items: center;
+    justify-items: center;
 }
 
 .mid-page-swiper__txt h1 {
@@ -558,8 +564,8 @@ p.discount2 {
 
 
 .mid-swiper {
-    height: 320px;
-    width: 700px;
+    height: 225px;
+    width: 375px;
     background: transparent;
 }
 
@@ -571,8 +577,28 @@ p.discount2 {
     text-align: center;
 }
 
+.mid-btn-prev, .mid-btn-next {
+    position: absolute;
+    top: 255px;
+    margin: 0 100px;
+    margin-top: -20px;
+}
+
 .mid-swiper .swiper-button-prev, .mid-swiper .swiper-button-next {
     color: rgb(0, 0, 0);
 }
 
 /****************************************** MID CARROSSEL FIM **************************************************************/
+
+@media screen and (max-width: 1024px) {
+    .mid-page-swiper {
+        display: flex;
+        margin: 0 auto;
+        width: 65vw;
+        height: 600px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+}
