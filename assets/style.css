@@ -14,10 +14,10 @@ body {
 .navbar {
     display: flex;
     height: 90px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     align-items: center;
     justify-content: space-around;
-    box-shadow: 2px 2px 12px #747474; 
+    box-shadow: 2px 2px 12px #747474;
     position: absolute;
     width: 100%;
     z-index: 2;
@@ -34,10 +34,6 @@ body {
     padding-left: 2.5em;
 }
 
-.nav__lista img {
-    width: 12px;
-}
-
 .nav__lista li {
     list-style: none;
     letter-spacing: 2px;
@@ -46,9 +42,23 @@ body {
 
 .nav__lista a {
     text-decoration: none;
-    color: #000c63;
+    color: #00073d;
     font-weight: 700;
     transition:200ms;
+}
+
+.nav__lista button {
+    background: none;
+    border: none;
+    color: #00073d;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Nunito';
+}
+
+.nav__lista button:hover {
+    color: rgb(0, 51, 255);
+    transition: 400ms;
 }
 
 .nav__lista a:hover {
@@ -90,6 +100,45 @@ body {
 }
 
 /***************** NAV FIM ******************/
+
+/********************** dropdown *****************/
+
+.dropdown__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown__down {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    top: 90px;
+    overflow: hidden;
+    max-height: 0px;
+    border-radius: 8px;
+    transition: 500ms ease;
+}
+
+.dropdown__menu.active .dropdown__down {
+    max-height: 270px;
+}
+
+.dropdown__down p {
+    padding: 1em;
+    font-weight: 700;
+}
+
+.dropdown__menu.active .dropdown__title img {
+    transform: rotate(180deg);
+}
+
+.dropdown__title img {
+    height: 18px;
+    transition: 200ms ease-in;
+    position: relative;
+    top: 4px;
+}
+/**************** dropdown FIM ****************/
 
 /* CARROSSEL INÍCIO */ 
 
