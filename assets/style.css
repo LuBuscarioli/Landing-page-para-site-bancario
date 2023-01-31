@@ -147,7 +147,7 @@ body {
     position: absolute;
     font-size: 60px;
     font-weight: 900;
-    left: 20vw;
+    left: 15vw;
     top: 50vh;
     color: white;
 }
@@ -600,5 +600,33 @@ p.discount2 {
         flex-direction: column;
         justify-content: space-around;
     }
+
+    .bigger-img {
+        display: none;
+    }
+
+    .slide__txt1, .slide__txt2, .slide__txt3 {
+        font-size: 40px;
+        font-weight: 900;
+        left: 15vw;
+    }
     
+}
+
+@media screen and (min-width: 1025px) {
+    .mid-swiper {
+        height: 300px;
+        width: 500px;
+    }
+
+    .mid-btn-prev, .mid-btn-next {
+        top: 300px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .smaller-img {
+        display: none;
+    }
 }
