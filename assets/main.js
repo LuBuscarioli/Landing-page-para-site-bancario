@@ -1,4 +1,3 @@
-alert ("VC ESTÁ NA BRANCH TESTES");
 
 let dropBtn = document.querySelectorAll('.dropdown__menu');
 
