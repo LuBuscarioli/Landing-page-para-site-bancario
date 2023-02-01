@@ -632,7 +632,7 @@ p.discount2 {
 }
 
 .footer__top-content a:hover {
-    color: rgb(187, 245, 255);
+    color: var(--azul-inter);
 }
 
 .footer__mid-content {
