@@ -3,18 +3,25 @@
     padding: 0;
 }
 
+:root {
+    --azul-escuro: #00223C;
+    --azul-inter: #215F8D;
+    --branco-azul: #E3F0FF;
+    --azul-branco-trans: rgb(227 240 255 / 70%);
+}
+
 body {
     font-size: 20px;
     font-family: 'Nunito', sans-serif;
     background: #dae9ff;
-    color: rgb(0, 0, 50);
+    color: var(--azul-escuro);
 }
 
 /***************** NAV INICIO ******************/
 .navbar {
     display: flex;
     height: 90px;
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--azul-branco-trans);
     align-items: center;
     justify-content: space-around;
     box-shadow: 2px 2px 12px #747474;
@@ -22,6 +29,7 @@ body {
     width: 100%;
     z-index: 2;
     position: fixed;
+    /* font-size: 15px; */
 }
 
 .nav__logo {
@@ -31,18 +39,21 @@ body {
 
 .nav__lista {
     display: flex;
-    padding-left: 2.5em;
+    /* padding-left: 2.5em; */
+    width: 30vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .nav__lista li {
     list-style: none;
     letter-spacing: 2px;
-    padding-left: 2em;
+    /* padding-left: 2em; */
 }
 
 .nav__lista a {
     text-decoration: none;
-    color: #00073d;
+    color: var(--azul-escuro);
     font-weight: 700;
     transition:200ms;
 }
@@ -50,51 +61,51 @@ body {
 .nav__lista button {
     background: none;
     border: none;
-    color: #00073d;
+    color: var(--azul-escuro);
     font-weight: 700;
     font-size: 20px;
     font-family: 'Nunito';
 }
 
 .nav__lista button:hover {
-    color: rgb(0, 51, 255);
+    color: var(--azul-inter);
     transition: 400ms;
 }
 
 .nav__lista a:hover {
-    color: rgb(0, 51, 255);
+    color: var(--azul-inter);
     transition: 400ms;
 }
 
 .nav__right-button a {
     text-decoration: none;
-    color: #f0f2f5;
+    color: var(--branco-azul);
     letter-spacing: 2px;
     margin-right: 0.5em;
     font-weight: 700;
     padding: 0.8em;
-    background: #00073d;
+    background: var(--azul-escuro);
     border-radius: 10px;
-    border: 1px solid #00073d;
+    border: 1px solid var(--azul-escuro);
     transition: 200ms;
 }
 
 .nav__right-button a:last-child {
     background: transparent;
-    color: #00073d;
-    border: 1px solid #00073d;
+    color: var(--azul-escuro);
+    border: 1px solid var(--azul-escuro);
     transition: 200ms;
 }
 
 .nav__right-button a:last-child:hover {
-    background: #00073d;
+    background: var(--azul-escuro);
     color: #f0f2f5;
-    border: 1px solid #00073d;
+    border: 1px solid var(--azul-escuro);
     transition: 200ms;
 }
 
 .nav__right-button a:hover {
-    color: #00073d;
+    color: var(--azul-escuro);
     background: transparent;
     transition: 200ms;
 }
@@ -111,7 +122,7 @@ body {
 
 .dropdown__down {
     position: absolute;
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--azul-branco-trans);
     top: 90px;
     overflow: hidden;
     max-height: 0px;
@@ -140,7 +151,7 @@ body {
 }
 /**************** dropdown FIM ****************/
 
-/* CARROSSEL INÍCIO */ 
+/* CARROSSEL INÃCIO */ 
 
 
 .slide__txt1, .slide__txt2, .slide__txt3 {
@@ -150,7 +161,7 @@ body {
     top: 50vh;
     position: relative;
     text-align: center;
-    color: white;
+    color: var(--branco-azul);
 }
 
 .swiper {
@@ -186,18 +197,18 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-    background: lightblue;
+    background: var(--branco-azul);
 }
 
 .swiper-button-prev, .swiper-button-next {
     border-radius: 5px;
     background: rgba(186, 186, 186, 0.315);
-    color: darkblue;
+    color: var(--azul-inter);
     padding: 0 5px;
 }
 
 .swiper-button-prev:hover, .swiper-button-next:hover {
-    color: rgb(0, 136, 255);
+    color: var(--azul-inter);
     transition: 300ms;
 }
 
@@ -218,7 +229,7 @@ body {
 /* PRODUTOS */
 
 .produtos {
-    background: rgb(58,64,74);
+    background: rgb(34,34,39);
     /* height: 40vh; */
     padding-top: 1.5em;
 }
@@ -249,21 +260,21 @@ body {
 .card-card, .card-phone, .card-pig, .card-din {
     width: 315px;
     height: 276px;
-    background: rgb(51,57,66);
+    background: rgb(42,42,49);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    color: aliceblue;
+    color: var(--branco-azul);
     transition: all 300ms ease-in;
     margin: 1em;
 }
 
 .card-card:hover, .card-phone:hover,
 .card-pig:hover, .card-din:hover{
-    background: #4a97a6;
+    background: var(--azul-inter);
     color: #000635;
 }
 
@@ -274,20 +285,20 @@ body {
 .cashback__title {
     text-align: center;
     padding: 70px 30px 250px;
-    background-color: #00073d;
+    background-color: var(--azul-escuro);
     border-bottom-left-radius: 200px;
     box-shadow: 0px 5px 14px 5px #0000006b;
 }
 
 .cashback__title h1 {
-    color: aliceblue;
+    color: var(--branco-azul);
     font-weight: 900;
     margin-bottom: 10px;
     font-size: 60px;
 }
 
 .cashback__title p {
-    color: aliceblue;
+    color: var(--branco-azul);
 }
 
 .cashback__container {
@@ -297,7 +308,7 @@ body {
 }
 
 .cashback__wrapper {
-    background-color: rgb(239, 255, 252);
+    background-color: var(--branco-azul);
     border-radius: 15px;
     margin: -200px 1rem 50px 1rem;
 }
@@ -324,7 +335,7 @@ body {
 }
 
 .cst p {
-    color: darkslategrey;
+    color: var(--azul-inter);
     font-size: 34px;
     font-weight: 800;
 }
@@ -354,7 +365,7 @@ input#price-slider::-webkit-slider-thumb {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: hsl(226, 100%, 54%);
+    background-color: var(--azul-inter);
     background-image: url(images/icon-slider.svg);
     background-repeat: no-repeat;
     background-position:center;
@@ -362,7 +373,7 @@ input#price-slider::-webkit-slider-thumb {
 }
 
 input#price-slider::-webkit-slider-thumb:hover {
-    background-color: hsl(206, 100%, 63%);
+    background-color: var(--azul-escuro);
 }
 
 .billing {
@@ -411,7 +422,7 @@ input#price-slider::-webkit-slider-thumb:hover {
 .toggle-slider::before {
     content: '';
     position: absolute;
-    background-color: #fff;
+    background-color: var(--branco-azul);
     height: 14px;
     width: 14px;
     border-radius: 50%;
@@ -432,19 +443,19 @@ input#price-slider::-webkit-slider-thumb:hover {
 }
 
 .cashback__footer a {
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 12, 66);
+    color: var(--branco-azul);
+    background-color: var(--azul-escuro);
     text-decoration: none;
     border-radius: 12px;
     padding: 10px 30px;
-    border: 1px solid rgb(0, 12, 66);
+    border: 1px solid var(--azul-escuro);
     transition: all 200ms ease-in;
 }
 
 .cashback__footer a:hover {
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 12, 66);
+    background-color: var(--branco-azul);
+    border: 1px solid var(--azul-escuro);
 }
   
 .cashback__footer ul {
@@ -461,7 +472,7 @@ input#price-slider::-webkit-slider-thumb:hover {
 }
   
 hr {
-    border-top: 1px solid rgb(5, 0, 54);
+    border-top: 1px solid var(--azul-inter);
 }
 
 .cst2 {
@@ -518,7 +529,7 @@ p.discount2 {
 /* ************ MID CARROSSEL **************/
 
 .mid-swipper-wrapper {
-    background: rgb(198, 233, 255);
+    background: var(--branco-azul);
     box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 30%);
     height: 700px;
 }
@@ -545,7 +556,7 @@ p.discount2 {
 .mid-page-swiper__txt a {
     text-decoration: none;
     font-weight: 700;
-    color: darkblue;
+    color: var(--azul-escuro);
     padding: 0.8em;
     background: transparent;
     border-radius: 10px;
@@ -556,7 +567,7 @@ p.discount2 {
 
 .mid-page-swiper__txt a:hover {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--branco-azul);
     padding: 0.8em;
     background: black;
     border-radius: 10px;
@@ -586,10 +597,91 @@ p.discount2 {
 }
 
 .mid-swiper .swiper-button-prev, .mid-swiper .swiper-button-next {
-    color: rgb(0, 0, 0);
+    color: var(--azul-escuro);
 }
 
 /****************************************** MID CARROSSEL FIM **************************************************************/
+
+/*****************************************FOOTER **************************************************/
+
+.footer-wrapper {
+    width: 100%;
+    height: 210px;
+    background: rgb(34,34,39);
+}
+
+.footer__top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background: rgb(42,42,49);
+}
+
+.footer-top__img img{
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.footer__link {
+    margin-left: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: all .2s ease;
+}
+
+.footer__top-content a:hover {
+    color: rgb(187, 245, 255);
+}
+
+.footer__mid-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    /* margin: 20px 0; */
+}
+
+.footer__mid-content p{
+    color: whitesmoke;
+}
+
+.footer__mid-img {
+    height: 40px;
+    margin-left: 20px;
+}
+
+.footer__mid-content a {
+    text-decoration: none;
+}
+
+.footer__bottom-content {
+    height: 70px;
+    background: var(--branco-azul);
+}
+
+.footer__bottom-content img{
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*****************************************FOOTER FIM **************************************************/
+
+@media screen and (max-width: 425px) {    
+
+    
+
+    .card-one img, .card-two img, .card-three img {
+        width: 100%;
+    }
+
+    .mid-swiper {
+        height: 170px;
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .produtos__title, .cashback__title h1, .mid-page-swiper__txt h1 {
